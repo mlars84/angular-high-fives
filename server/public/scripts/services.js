@@ -1,5 +1,7 @@
 // service to track count of successful high-fivess
-myApp.service('HighFiveCount', function($http) {
+myApp.service('HighFiveCount', function() {
+
+  var counter = 0;
 
   this.counterGetter = function() {
     return counter;
@@ -7,12 +9,18 @@ myApp.service('HighFiveCount', function($http) {
 
   this.counterSetter = function() {
     console.log('counterSetter');
-    counter++
+    counter++;
   };
-
 }); // end HighFiveCount service
 
+
+
+
 //service to generate random number between
-myApp.service('RandNum', function($http) {
-  Math.floor((Math.random() * 10) + 1);
+myApp.service('RandNum', function() {
+  var randNumber = 0;
+  this.randNumGen = function() {
+    randNumber = Math.floor((Math.random() * 10) + 1);
+  };
+  return randNumber;
 }); // end RandNum service

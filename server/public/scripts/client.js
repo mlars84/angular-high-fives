@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('HighFiveController', function(HighFiveCount, RandNum) {
+myApp.controller('HighFiveController', [function(HighFiveCount, RandNum) {
   console.log('NG');
 
   var vm = this;
@@ -12,4 +12,5 @@ myApp.controller('HighFiveController', function(HighFiveCount, RandNum) {
     vm.count = HighFiveCount.counterGetter();
   };
 
-}); // end controller
+  vm.RandNum = RandNum.randNumber;
+}]); // end controller
