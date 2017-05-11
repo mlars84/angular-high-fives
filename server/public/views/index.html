@@ -8,6 +8,7 @@
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
+    <script src="scripts/services.js" charset="utf-8"></script>
   </head>
   <body ng-app="myApp">
     <div class="container row">
@@ -22,11 +23,13 @@
       <p class="col-lg-12">First Appearance: Marvel Graphic Novel #17; (fully identified) X-Factor #5 (1986)</p>
       <p class="col-lg-12">Origin: Rise of Apocalypse #1-4</p>
     </div>
-    <div ng-controller="HighFiveController as hfc" ng-init="hfc.RandNum()">
-      <h3>{{hfc.randNum}}</h3>
+    <div ng-controller="HighFiveController as hfc" ng-init="hfc.apocNum()">
+      <h3>Apocalypse current High Five Skill Level = {{hfc.domNum}}</h3>
       <br>
-      <button class="btn" type="button" name="random number" ng-click="hfc.counting()">Random Number</button>
-      <h2>Succesful High Fives: {{hfc.count}}</h2>
+      <h3>Randomly generate a number to compare to his skill level:</h3>
+      <button class="btn" type="button" name="random number" ng-click="hfc.userNumber()">High Five</button>
+      <h2>Your High Five Quality: {{hfc.buttonNumber}}</h2>
+      <h3>High Five Successes: {{hfc.count}}</h3>
     </div>
   </body>
 </html>

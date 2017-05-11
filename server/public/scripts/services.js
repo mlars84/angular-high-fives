@@ -1,8 +1,17 @@
+//service to generate random number between
+myApp.service('RandNum', function() {
+
+  this.randNumGen = function() {
+    return (Math.floor((Math.random() * 10) + 1));
+  };
+
+}); // end RandNum service
+
+
 // service to track count of successful high-fivess
 myApp.service('HighFiveCount', function() {
-
   var counter = 0;
-
+  
   this.counterGetter = function() {
     return counter;
   };
@@ -12,15 +21,3 @@ myApp.service('HighFiveCount', function() {
     counter++;
   };
 }); // end HighFiveCount service
-
-
-
-
-//service to generate random number between
-myApp.service('RandNum', function() {
-  var randNumber = 0;
-  this.randNumGen = function() {
-    randNumber = Math.floor((Math.random() * 10) + 1);
-  };
-  return randNumber;
-}); // end RandNum service
