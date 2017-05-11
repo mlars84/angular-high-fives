@@ -1,9 +1,11 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var bodyParser = require('body-parser');
 
 
 // serve static files
+app.use(bodyParser.json());
 app.use(express.static(path.resolve('./server/public')));
 
 // server index file

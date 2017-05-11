@@ -8,9 +8,13 @@
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
   </head>
-  <body>
-
-
-
+  <body ng-app="myApp">
+    <h1>HighFive Judger 2.0</h1>
+    <div class="container row">
+      <img src="http://farm6.staticflickr.com/5448/7188600869_da28143344_o.gif" alt="">
+    </div>
+    <div ng-controller="HighFiveController as hfc">
+      <button type="button" placeholder="random number" ng-click="hfc.RandNum()"></button>
+    </div>
   </body>
 </html>
