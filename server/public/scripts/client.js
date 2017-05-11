@@ -5,4 +5,11 @@ myApp.controller('HighFiveController', function(HighFiveCount, RandNum) {
 
   var vm = this;
 
+  vm.count = HighFiveCount.counterGetter();
+
+  vm.counting = function() {
+    HighFiveCount.counterSetter();
+    vm.count = HighFiveCount.counterGetter();
+  };
+
 }); // end controller
