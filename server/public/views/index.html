@@ -24,11 +24,11 @@
       <p class="col-lg-12">Origin: Rise of Apocalypse #1-4</p>
     </div>
     <div ng-controller="HighFiveController as hfc" ng-init="hfc.apocNum()">
-      <h3>Apocalypse current High Five Skill Level = {{hfc.domNum}}</h3>
+      <h3>Apocalypse current High Five Skill Level = {{hfc.firstDomNum}}</h3>
       <br>
       <h3>Randomly generate a number to compare to his skill level:</h3>
       <button class="btn" type="button" name="random number" ng-click="hfc.userNumber()">High Five</button>
-      <h2>Your High Five Quality: {{hfc.buttonNumber}}</h2>
+      <h2>Your High Five Quality = {{hfc.buttonNumber}}</h2>
       <h3>High Five Successes: {{hfc.count}}</h3>
     </div>
   </body>

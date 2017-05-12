@@ -7,27 +7,25 @@ myApp.controller('HighFiveController', function(RandNum, HighFiveCount) {
 
   //function to generate a random number on page init
   vm.apocNum = function() {
-    vm.domNum = RandNum.randNumGen();
-    console.log(vm.domNum);
+    vm.count = HighFiveCount.counterGetter();
+    vm.firstDomNum = RandNum.randNumGen();
+    console.log(vm.firstDomNum);
   }; //end apocNum function
 
   // function to generate random number on button click
   vm.userNumber = function() {
     vm.buttonNumber = RandNum.randNumGen();
     console.log(vm.buttonNumber);
-    vm.compareThem(vm.domNum, vm.buttonNumber);
+    vm.compareThem(vm.firstDomNum, vm.buttonNumber);
   }; //end userNumber function
 
   // function to compare skill level and quality of high five
   vm.compareThem = function(firstNum, secondNum) {
-    if(firstNum >= secondNum){
-      vm.counting = function() {
-        HighFiveCount.counterSetter();
-      };
-    }
-    else {
+    console.log(firstNum, secondNum);
+    if(firstNum > secondNum) {
+      HighFiveCount.counterSetter();
+    } else {
       vm.count = HighFiveCount.counterGetter();
-      console.log(vm.count);
     }
   }; //end compareThem
 }); //end controller
