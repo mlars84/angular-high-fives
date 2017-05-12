@@ -22,8 +22,9 @@ myApp.controller('HighFiveController', function(RandNum, HighFiveCount) {
   // function to compare skill level and quality of high five
   vm.compareThem = function(firstNum, secondNum) {
     console.log(firstNum, secondNum);
-    if(firstNum > secondNum) {
+    if(firstNum < secondNum) {
       HighFiveCount.counterSetter();
+      vm.count = HighFiveCount.counterGetter();
     } else {
       vm.count = HighFiveCount.counterGetter();
     }
