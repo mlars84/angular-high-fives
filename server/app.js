@@ -3,6 +3,7 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
+var port = process.env.PORT || 3333;
 
 // serve static files
 app.use(bodyParser.json());
@@ -17,6 +18,10 @@ app.use('/', function(req, res) {
   res.sendFile(path.join(__dirname, './public/views/index.html'));
 });
 
-app.listen(3000, function() {
+app.use('/', function(req, res) {
+  res.sendFile(path.join('./public/vendor/angular.min.js'));
+});
+
+app.listen(port, function() {
   console.log("server running, check localhost:3000");
 });
