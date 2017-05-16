@@ -1,5 +1,5 @@
 body {
-  background-color: #f28c37;
+  background-color: #f9f091;
 }
 
 img {
@@ -10,13 +10,21 @@ img {
 
 .btn {
   margin-left: 1em;
-  background-color: #fff795;
 }
 
 h3 {
-  margin-left: 1em;
+  margin-left: 10px;
 }
 
 h2 {
-  margin-left: 1em;
+  margin-left: 10px;
+}
+
+.jumbotron {
+  background-image: url('http://comicsalliance.com/files/2016/05/100-x-men-feat1.jpg');
+}
+
+.footer {
+  text-align: center;
+  font-size: 18px;
 }

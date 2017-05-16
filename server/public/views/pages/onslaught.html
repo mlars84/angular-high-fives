@@ -1,0 +1,20 @@
+<h1>Onslaught</h1>
+<div class="container row">
+  <img class="img-fluid" alt="Responsive image" src="https://vignette2.wikia.nocookie.net/villains/images/a/ad/53ad9ecd524fd.jpg/revision/latest?cb=20141128031209" alt="">
+  <h3 class="col-lg-12">Onslaught</h3>
+  <p class="col-lg-12">Real Name: Inapplicable</p>
+  <p class="col-lg-12">Height: 10' (variable)</p>
+  <p class="col-lg-12">Weight: 900 lbs. (variable)</p>
+  <p class="col-lg-12">Powers: Onslaught possessed the combined abilities of Professor X, Magneto, Franklin Richards, and X-Man, including telepathy, telekinesis, astral projection, illusion creation, mental bolt projection, sensing mutant presences, manipulating magnetic fields, and affecting reality itself. Onslaught could also enhance its physical size and strength.</p>
+  <p class="col-lg-12">Group Affiliations:  Founder and leader of the Alliance of Evil, the Horsemen of Apocalypse, the Dark Riders, Riders of the Storm/Dark Riders</p>
+  <p class="col-lg-12">Employer of Gateway, Post, Blob, Mimic, Holocaust and Dark Beast; controller of Sentinels, Sentinel army</p>
+  <p class="col-lg-12">Wolverine #104 (1996)</p>
+</div>
+<div ng-controller="OnslaughtController as oc" ng-init="oc.onslaughtNum()">
+  <h3>Onslaught current High Five Skill Level = {{oc.firstDomNum}}</h3>
+  <br>
+  <h3>Randomly generate a number to compare to his skill level:</h3>
+  <button class="btn btn-primary" type="button" name="random number" ng-click="oc.userNumber()">High Five</button>
+  <h2>Your High Five Quality = {{oc.buttonNumber}}</h2>
+  <h3>High Five Successes: {{oc.count}}</h3>
+</div>
