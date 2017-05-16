@@ -1,4 +1,19 @@
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['ngRoute']);
+
+//config to provide routes and establish ctlrs
+myApp.config(function($routeProvider, $locationProvider) {
+  $routeProvider.when('/', {
+    templateUrl: '/',
+    controller: 'HighFiveController as hc'
+  }).when('/magneto', {
+    templateUrl: 'views/pages/magneto.html',
+    controller: 'MagnetoController as mc'
+  }).when('/mystique', {
+    templateUrl: 'views/pages/mystique.html',
+    controller: 'MystiqueController as myc'
+  }).otherwise('/');
+  $locationProvider.html5Mode(true);
+}); //end config
 
 myApp.controller('HighFiveController', function(RandNum, HighFiveCount) {
   console.log('NG');
