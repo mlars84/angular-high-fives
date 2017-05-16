@@ -13,12 +13,8 @@ skill level (conditional statement)
 - [X] create seperate controllers for each page
 - [X] create seperate service for each page/controller
 - [X] properly source controllers and services
-- [] connect all htmls, controllers and service to eachother and test
-- []
-
-PART 2: Using ng-router, give your app 2 more views with 2 more fictional characters.
-
-One character that is very good at high-fives: randomly generate their skill level between 6 and 10. One character that is decent with high-fives: randomly generate their skill level between 4 and 10.
+- [X] connect all htmls, controllers and service to eachother and test
+- [] add some HARD mode stuff
 
 You will need to find a way to share the total number of high fives across your controllers. For example: "I've successfully made 4 of the 11 successful high fives!"
 
