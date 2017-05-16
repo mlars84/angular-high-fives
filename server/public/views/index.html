@@ -17,26 +17,14 @@
     <base href="/">
   </head>
   <body ng-app="myApp">
-    <div class="container row">
-      <img class="img-fluid" alt="Responsive image" src="https://media1.fdncms.com/portmerc/imager/u/large/18110752/film-xmenapocalypse.jpg" alt="">
-      <h3 class="col-lg-12">Apocalypse</h3>
-      <p class="col-lg-12">Real Name: En Sabah Nur</p>
-      <p class="col-lg-12">Height: Variable (usually around 7')</p>
-      <p class="col-lg-12">Weight: 300 lbs. (variable)</p>
-      <p class="col-lg-12">Powers: Apocalypse's full extent of powers remain to be revealed, especially to the extent of which powers have since been augmented by alien technology. Apocalypse claims to have control of his body on the molecular level and structure-- allowing him to more</p>
-      <p class="col-lg-12">Abilities: Mastery of alien technology, specifically in regards to genetics and biochemistry</p>
-      <p class="col-lg-12">Group Affiliations:  Founder and leader of the Alliance of Evil, the Horsemen of Apocalypse, the Dark Riders, Riders of the Storm/Dark Riders</p>
-      <p class="col-lg-12">First Appearance: Marvel Graphic Novel #17; (fully identified) X-Factor #5 (1986)</p>
-      <p class="col-lg-12">Origin: Rise of Apocalypse #1-4</p>
-    </div>
-    <div ng-controller="ApocalypseController as ac" ng-init="ac.apocNum()">
-      <h3>Apocalypse current High Five Skill Level = {{ac.firstDomNum}}</h3>
-      <br>
-      <h3>Randomly generate a number to compare to his skill level:</h3>
-      <button class="btn" type="button" name="random number" ng-click="ac.userNumber()">High Five</button>
-      <h2>Your High Five Quality = {{ac.buttonNumber}}</h2>
-      <h3>High Five Successes: {{ac.count}}</h3>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/views/pages/apocalypse.html">Apocalypse</a></li>
+        <li><a href="/views/pages/magneto.html">Magneto</a></li>
+        <li><a href="/views/pages/mystique.html">Mystique</a></li>
+      </ul>
+    </nav>
     <ng-view></ng-view>
   </body>
 </html>

@@ -10,8 +10,8 @@ skill level (conditional statement)
 # Part 2 ToDo
 ---
 - [X] add ngRoute and routeProvider protocol
-- [] create seperate controllers for each page
-- [] create seperate service for each page/controller
+- [X] create seperate controllers for each page
+- [X] create seperate service for each page/controller
 - [X] properly source controllers and services
 - [] connect all htmls, controllers and service to eachother and test
 - []
