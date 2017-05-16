@@ -1,5 +1,30 @@
+.jumbotron {
+  background-image: url('http://comicsalliance.com/files/2016/05/100-x-men-feat1.jpg');
+  font-family: 'Permanent Marker', cursive;
+}
+
+.navbar {
+  background-color: #e74747;
+  border: 1px solid black;
+  color: #f9f091;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.navClass {
+  background-color: #e74747;
+  border: 1px solid black;
+  color: #f9f091;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+  background-color: #f9f091;
+  padding: 20px 20px 20px 20px;
+}
+
 body {
   background-color: #f9f091;
+  font-family: 'Permanent Marker', cursive;
 }
 
 img {
@@ -10,25 +35,21 @@ img {
 
 .btn {
   margin-left: 1em;
+  font-family: 'Permanent Marker', cursive;
 }
 
 h1 {
   margin-left: 10px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 h2 {
   margin-left: 10px;
-}
-
-h3 {
-  margin-left: 10px;
-}
-
-.jumbotron {
-  background-image: url('http://comicsalliance.com/files/2016/05/100-x-men-feat1.jpg');
+  font-family: 'Permanent Marker', cursive;
 }
 
 .footer {
   text-align: center;
   font-size: 18px;
+  font-family: 'Permanent Marker', cursive;
 }
