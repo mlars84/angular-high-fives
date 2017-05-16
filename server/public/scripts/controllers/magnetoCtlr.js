@@ -1,1 +1,1 @@
-myApp.controller
+// myApp.controller('HighFiveController', ['magneto'])

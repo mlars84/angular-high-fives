@@ -4,7 +4,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
     templateUrl: '/',
-    controller: 'HighFiveController as hc'
+    controller: 'ApocalypseController as ac'
   }).when('/magneto', {
     templateUrl: 'views/pages/magneto.html',
     controller: 'MagnetoController as mc'
@@ -15,14 +15,11 @@ myApp.config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 }); //end config
 
-myApp.controller('HighFiveController', function(RandNum, HighFiveCount) {
-  console.log('NG');
-
-  var vm = this;
+var vm = this;
 
   //function to generate a random number on page init
   vm.apocNum = function() {
-    vm.count = HighFiveCount.counterGetter();
+    vm.count = apocalypseService.counterGetter();
     vm.firstDomNum = RandNum.randNumGen();
     console.log(vm.firstDomNum);
   }; //end apocNum function
@@ -38,10 +35,9 @@ myApp.controller('HighFiveController', function(RandNum, HighFiveCount) {
   vm.compareThem = function(firstNum, secondNum) {
     console.log(firstNum, secondNum);
     if(firstNum < secondNum) {
-      HighFiveCount.counterSetter();
-      vm.count = HighFiveCount.counterGetter();
+      apocalypseService.counterSetter();
+      vm.count = apocalypseService.counterGetter();
     } else {
-      vm.count = HighFiveCount.counterGetter();
+      vm.count = apocalypseService.counterGetter();
     }
   }; //end compareThem
-}); //end controller
