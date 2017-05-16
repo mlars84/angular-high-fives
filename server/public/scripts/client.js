@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 //config to provide routes and establish ctlrs
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
-    template: '',
+    template: '<a href="http://marvel.com/characters/browse">More on Marvel Characters</a>',
     controller: 'DefaultController as dc'
   }).when('/apocalypse', {
     templateUrl: 'views/pages/apocalypse.html',
