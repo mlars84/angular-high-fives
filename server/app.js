@@ -3,7 +3,7 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
-var port = process.env.PORT || 3333;
+var port = process.env.PORT || 3000;
 
 // serve static files
 app.use(bodyParser.json());

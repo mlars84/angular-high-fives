@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Angular Routing Magic!</title>
-    <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendors/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="/vendor/angular.min.js" type="text/javascript"></script>
-    <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
+    <script src="/vendors/angular.min.js" type="text/javascript"></script>
+    <script src="vendors/angular-animate.min.js"></script>
+    <script src="/vendors/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
-    <script src="scripts/services.js" charset="utf-8"></script>
+    <script src="scripts/services/mainServices.js" charset="utf-8"></script>
+    <base href="/">
   </head>
   <body ng-app="myApp">
+<<<<<<< HEAD
     <div class="container row">
       <img class="img-fluid" alt="Responsive image" src="https://media1.fdncms.com/portmerc/imager/u/large/18110752/film-xmenapocalypse.jpg" alt="">
       <h3 class="col-lg-12">Apocalypse</h3>
@@ -31,5 +35,17 @@
       <h2>Your High Five Quality = {{hfc.buttonNumber}}</h2>
       <h3>High Five Successes: {{hfc.count}}</h3>
     </div>
+=======
+    <div class="jumbotron"></div>
+    <h1>Choose a character from below to compare high five skills!</h1>
+    <nav class="navbar navbar-default navbar-static-top">
+      <a class="navClass" href="/">Home</a>
+      <a class="navClass" href="/apocalypse">Apocalypse</a>
+      <a class="navClass" href="/onslaught">Onslaught</a>
+      <a class="navClass" href="/mystique">Mystique</a>
+    </nav>
+>>>>>>> angular-route
   </body>
+  <ng-view></ng-view>
 </html>
+<footer class="footer">c.1992-97</footer>

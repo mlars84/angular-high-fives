@@ -1,0 +1,20 @@
+<h1>Mystique</h1>
+<div class="container row">
+  <img class="img-fluid" alt="Responsive image" src="http://i.kinja-img.com/gawker-media/image/upload/s--2Cw2ZdY9--/aoz9sslhua5ztcjew35v.jpg" alt="">
+  <p class="col-lg-12">Real Name: Unrevealed</p>
+  <p class="col-lg-12">Height: 5'10" (variable)</p>
+  <p class="col-lg-12">Weight: 120 lbs.</p>
+  <p class="col-lg-12">Powers: Mystique can psionically shift the atoms of her body to duplicate any humanoid of either sex, wearing any kind of clothing. She can precisely duplicate another person’s retina pattern, finger, palm and skin-pore patterns, and vocal cords. She can increase her volume, but not her mass. Mystique’s power grants her age retardation, increased healing, and immunity to drugs and poisons.</p>
+  <p class="col-lg-12">Abilities: Mystique is a highly skilled combatant, actress, marksman, and strategist in terrorist and commando operations.</p>
+  <p class="col-lg-12">Group Affiliations: X-Men (Osborn's team); formerly X-Men, Marauders (mutants), Marauders, Xavier Institute For Higher Learning, Xavier Institute Student Body, X-Corps, Brotherhood Of Mutants, X-Factor, Freedom Force, DARPA</p>
+  <p class="col-lg-12">First Appearance: (as Raven) Ms Marvel #16 (1978); (as Mystique) Ms. Marvel #18 (1978)</p>
+  <p class="col-lg-12">Origin: X-Men Unlimited #4 (1994), Uncanny X-Men #428 (2003), Sabretooth: Death Hunt #3 (1993)</p>
+</div>
+<div ng-controller="MystiqueController as mc" ng-init="mc.mystiqueNum()">
+  <h3>Mystique current High Five Skill Level = {{mc.firstDomNum}}</h3>
+  <br>
+  <h3>Randomly generate a number to compare to his skill level:</h3>
+  <button class="btn btn-primary" type="button" name="random number" ng-click="mc.userNumber()">High Five</button>
+  <h2>Your High Five Quality = {{mc.buttonNumber}}</h2>
+  <h3>Total High Five Successes: {{mc.count}}</h3>
+</div>
