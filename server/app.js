@@ -2,6 +2,14 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
+var firebase = require("firebase");
+var firebase = require("firebase/app");
+require("firebase/auth");
+require("firebase/database");
+var config = {
+  // ...
+};
+firebase.initializeApp(config);
 
 var port = process.env.PORT || 3000;
 
